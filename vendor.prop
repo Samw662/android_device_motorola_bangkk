@@ -175,6 +175,9 @@ drm.service.enabled=true
 # Fingerprint
 persist.vendor.qfp=true
 
+# FM
+ro.vendor.fm.use_audio_session=true
+
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
