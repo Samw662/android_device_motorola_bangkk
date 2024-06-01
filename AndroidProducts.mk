@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lmodroid_fogos.mk
+    $(LOCAL_DIR)/lineage_bangkk.mk
 
 COMMON_LUNCH_CHOICES := \
-    lmodroid_fogos-user \
-    lmodroid_fogos-userdebug \
-    lmodroid_fogos-eng
+    lineage_bangkk-user \
+    lineage_bangkk-userdebug \
+    lineage_bangkk-eng

@@ -6,7 +6,7 @@
 
 BOARD_VENDOR := motorola
 
-DEVICE_PATH := device/motorola/fogos
+DEVICE_PATH := device/motorola/bangkk
 
 # Architecture
 TARGET_ARCH := arm64
@@ -24,7 +24,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := fogos
+TARGET_BOOTLOADER_BOARD_NAME := bangkk
 TARGET_NO_BOOTLOADER := true
 
 # Build
@@ -44,7 +44,7 @@ BOARD_KERNEL_CMDLINE += swiotlb=0 loop.max_part=7 cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += pcie_ports=compat loop.max_part=7 iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1 androidboot.hab.csv=8
 BOARD_KERNEL_CMDLINE += androidboot.hab.cid=50
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogos
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=bangkk
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
@@ -92,7 +92,6 @@ AB_OTA_PARTITIONS += \
     product \
     system \
     system_ext \
-    odm \
     vbmeta \
     vbmeta_system \
     vendor \
@@ -234,4 +233,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
-include vendor/motorola/fogos/BoardConfigVendor.mk
+include vendor/motorola/bangkk/BoardConfigVendor.mk
