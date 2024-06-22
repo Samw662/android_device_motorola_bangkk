@@ -280,6 +280,7 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
+vendor/lib/libmot_engine_settings.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/camera/com.mot.eeprom.mot_bangkk_s5k4h7_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p128f_s5kgn9_eeprom.so
@@ -437,6 +438,7 @@ vendor/lib64/libvidhance.so
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/libmot_engine_settings.so
 
 # Camera Configs - From Bangkk
 vendor/etc/camera/SwadAIMod.bin
@@ -1205,6 +1207,7 @@ vendor/lib64/qcrilMarshal.so
 vendor/lib64/qcrild_libqcrilnrutils.so
 vendor/lib64/qtiril-utils.so
 vendor/lib64/qtiwakelock.so
+vendor/lib64/libqsap_sdk.so
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
