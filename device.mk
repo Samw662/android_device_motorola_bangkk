@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
+    libpng.vendor \
     libcamera2ndk_vendor \
     libgui_vendor \
     libgui_shim_vendor \
@@ -322,7 +323,8 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libstagefrighthw \
-    libstagefright_softomx.vendor
+    libstagefright_softomx.vendor \
+    libstagefright_softomx_plugin.vendor
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -385,6 +387,8 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
+    libcurl.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -407,6 +411,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libxml2 \
+    libion.vendor \
+    libnetutils.vendor \
+    libsysutils.vendor \
     librmnetctl
 
 # Sensors
@@ -420,6 +428,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel
+
+# SQLite
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \
