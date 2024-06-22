@@ -280,7 +280,6 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/libvideooptfeature.so
 vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
-vendor/lib/libmot_engine_settings.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/camera/com.mot.eeprom.mot_bangkk_s5k4h7_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p128f_s5kgn9_eeprom.so
