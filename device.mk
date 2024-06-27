@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
+# HALs
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := holi
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 400dpi
@@ -49,6 +53,21 @@ PRODUCT_PACKAGES += \
     SettingsProviderResBangkk \
     SystemUIResBangkk
 
+<<<<<<< HEAD
+=======
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += hardware/qcom-caf/sm8350/kernel-headers
+
+# Source
+PRODUCT_HOST_PACKAGES += \
+    aapt2 \
+    avbtool \
+    brotli \
+    debugfs \
+    signapk \
+    zipalign
+
+>>>>>>> bb5eef5 (bangkk: fix more bs)
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -210,7 +229,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-PRODUCT_PACKAGES += \
+ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.bangkk \
     com.motorola.hardware.biometric.fingerprint@1.0.vendor
 
