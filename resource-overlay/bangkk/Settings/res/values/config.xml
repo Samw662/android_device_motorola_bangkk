@@ -14,7 +14,7 @@
     <bool name="config_show_touch_sensitivity">true</bool>
 
     <!-- The radius of the enrollment progress bar, in DP. -->
-    <integer name="config_udfpsEnrollProgressBar">130</integer>
+    <integer name="config_udfpsEnrollProgressBar">70</integer>
 
     <!-- The number of vibration intensity levels supported by the device.
          Note that this should correspond to the ability to vary the vibration amplitude, with
