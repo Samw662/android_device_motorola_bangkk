@@ -19,7 +19,7 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.3",
         "vendor.egistec.hardware.fingerprint@4.0",
     ],
-    header_libs: ["device_kernel_headers"]
+    header_libs: ["generated_kernel_headers"]
 }
 
 cc_library_static {
@@ -29,6 +29,6 @@ cc_library_static {
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"
     ],
     header_libs: [
-        "device_kernel_headers_system",
+        "generated_kernel_headers",
     ],
 }
