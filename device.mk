@@ -16,6 +16,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Inherit virtual_ab_ota product
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Speed profile services and wifi-service to reduce RAM and storage
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
@@ -541,3 +544,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/bangkk/bangkk-vendor.mk)
+
