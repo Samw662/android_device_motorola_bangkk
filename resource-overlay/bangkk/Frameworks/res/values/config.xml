@@ -363,4 +363,6 @@
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
 
+    <!-- Whether devices suports in-display fingerprint when screen is off -->
+    <bool name="config_supportScreenOffUdfps">true</bool>
 </resources>
