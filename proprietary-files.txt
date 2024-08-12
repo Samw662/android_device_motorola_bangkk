@@ -1001,7 +1001,7 @@ system/lib/motorola.hardware.camera.imgtuner@1.0.so
 system/lib64/motorola.hardware.camera.imgtuner@1.0.so
 system/lib64/libhwbinder.so:system_ext/lib64/libhwbinder.so
 system/lib64/libhidltransport.so:system_ext/lib64/libhidltransport.so
-product/app/MotCamera3AI/MotCamera3AI.apk:system_ext/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED
+product/app/MotCamera3AI/MotCamera3AI.apk:system_ext/app/MotCamera3AI/MotCamera3AI.apk;PRESIGNED;OVERRIDES=Aperture
 product/etc/permissions/com.motorola.camera3.content.ai.xml:system_ext/etc/permissions/com.motorola.camera3.content.ai.xml
 product/etc/permissions/com.motorola.camera3.lens.xml:system_ext/etc/permissions/com.motorola.camera3.lens.xml
 product/etc/permissions/com.motorola.camera3.bangkk.xml:system_ext/etc/permissions/com.motorola.camera3.bangkk.xml
