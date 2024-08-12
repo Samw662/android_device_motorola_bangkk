@@ -207,6 +207,12 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# FM
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
+
 # Fingerprint
  PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.bangkk \
