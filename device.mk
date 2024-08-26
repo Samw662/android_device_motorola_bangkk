@@ -50,7 +50,8 @@ PRODUCT_PACKAGES += \
     FrameworksResBangkk \
     LineageSystemUIBangkk \
     SettingsProviderResBangkk \
-    SystemUIResBangkk
+    SystemUIResBangkk \
+    EuiccOverlayBangkk
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
