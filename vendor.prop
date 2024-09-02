@@ -355,6 +355,9 @@ dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
 # Wfd
 vendor.media.wfd.automode=1
 
@@ -363,3 +366,4 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
