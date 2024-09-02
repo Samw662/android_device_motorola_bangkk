@@ -54,8 +54,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 #Stock use gzip let's try
 #BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
-#TARGET_KERNEL_SOURCE := kernel/motorola/sm6375
-#TARGET_KERNEL_CONFIG := vendor/holi-qgki_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola/sm6375
+#TARGET_KERNEL_CONFIG := vendor/bangkk_defconfig
 
 BOARD_KERNEL_BINARIES := kernel
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)-kernel/dtbo.img
@@ -139,7 +139,7 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/infinity/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := \
    $(DEVICE_PATH)/compatibility_matrix.xml \
    hardware/qcom-caf/common/compatibility_matrix.xml
@@ -159,7 +159,7 @@ BOARD_BUILD_VENDOR_RAMDISK_IMAGE := true
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := erofs
 
 BOARD_MOT_DP_GROUP_PARTITION_LIST := product system system_ext vendor
 BOARD_SUPER_PARTITION_GROUPS := mot_dp_group
