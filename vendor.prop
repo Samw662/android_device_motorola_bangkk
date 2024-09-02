@@ -357,6 +357,12 @@ dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+ro.lmk.kill_timeout_ms=15
+ro.lmk.stall_limit_critical=40
+ro.lmk.debug=false
+
 # LMKD/PSI
 ro.lmk.use_psi=true
 ro.lmk.low=1001
