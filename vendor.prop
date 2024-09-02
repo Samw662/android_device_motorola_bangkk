@@ -356,6 +356,7 @@ dalvik.vm.image-dex2oat-filter=speed
 dalvik.vm.image-dex2oat-threads=8
 dalvik.vm.dex2oat-filter=speed
 dalvik.vm.dex2oat-threads=8
+dalvik.vm.dex2oat64.enabled=true
 
 # LMK
 ro.lmk.filecache_min_kb=153600
