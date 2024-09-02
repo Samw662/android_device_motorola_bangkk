@@ -234,6 +234,7 @@ persist.vendor.ims.playout_delay=50
 persist.vendor.ims.vt.enableadb=1
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.sdm.support_writeback=0
 
 # Incremental FS
 ro.incremental.enable=true
