@@ -70,3 +70,6 @@ persist.sys.wfd.virtual=0
 
 #Disable MTE Async for system server
 arm64.memtag.process.system_server=off
+
+# Memory
+persist.device_config.mglru_native.lru_gen_config=core
