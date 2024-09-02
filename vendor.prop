@@ -162,6 +162,7 @@ vendor.display.enable_early_wakeup=1
 vendor.display.enable_optimize_refresh=1
 vendor.display.hwc_disable_hdr=1
 vendor.display.use_smooth_motion=1
+vendor.display.vds_allow_hwc=1
 
 # DPM
 persist.vendor.dpm.feature=11
@@ -189,6 +190,7 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.disable_elapsetime_if_has_virtual=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
+debug.performance.tuning=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
@@ -209,7 +211,9 @@ ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+vendor.gralloc.enable_fb_ubwc=1
 vendor.gralloc.disable_ubwc=0
+vendor.gralloc.secure_preview_buffer_format=420_sp
 vendor.hw.sf.IdleLazyResetThresholdT=1000
 debug.sf.latch_unsignaled=1
 debug.sf.predict_hwc_composition_strategy=0
@@ -218,6 +222,7 @@ ro.surface_flinger.set_touch_timer_ms=1000
 ro.surface_flinger.use_smart_90_for_video=true
 vendor.display.disable_dynamic_sf_idle=1
 vendor.display.idle_time=0
+
 
 # IMS
 persist.vendor.ims.cam_sensor_delay=20
