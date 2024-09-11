@@ -26,6 +26,10 @@
 # OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+# Changes from Qualcomm Innovation Center are provided under the following license:
+# Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause-Clear
+#
 
 function 8953_sched_dcvs_eas()
 {
@@ -1049,8 +1053,6 @@ case "$target" in
 			chip_family_id=-1
 		fi
 
-		echo "adsprpc : chip_family_id : $chip_faily_id" > /dev/kmsg
-
 		case "$chip_family_id" in
 			"0x76")
 			if [ -f /sys/devices/platform/soc/soc:qcom,msm_fastrpc/remote_cdsp_status ]; then
@@ -1059,11 +1061,8 @@ case "$target" in
 				remote_cdsp_status=-1
 			fi
 
-			echo "adsprpc : remote_cdsp_status : $remote_cdsp_status" > /dev/kmsg
-
 			if [ $remote_cdsp_status -eq 0 ]; then
 				setprop vendor.fastrpc.disable.cdsprpcd.daemon 1
-				echo "adsprpc : Disabled cdsp daemon" > /dev/kmsg
 			fi
 		 esac
 		  ;;
@@ -4224,7 +4223,7 @@ case "$target" in
 
         #power/perf tunings for khaje
         case "$soc_id" in
-                 "518" )
+                 "518" | "561" | "585" | "586" )
 
             # Core control parameters on big
             echo 0 > /sys/devices/system/cpu/cpu0/core_ctl/enable
@@ -5198,7 +5197,7 @@ case "$target" in
     "msmnile")
 	# cpuset parameters
 	target_varient=`getprop ro.build.product`
-        if [ "$target_varient" == "msmnile_gvmq" ]; then
+        if [ "$target_varient" == "msmnile_gvmq" ] || [ "$target_varient" == "msmnile_gvmgh" ]; then
 		echo 4-7 > /dev/cpuset/background/cpus
 		echo 4-7 > /dev/cpuset/system-background/cpus
 
