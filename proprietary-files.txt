@@ -198,6 +198,7 @@ vendor/lib64/motorola.hardware.camera.desktop@2.0.so
 
 # Camera - OIS
 vendor/firmware/mot_aw86006.prog
+vendor/firmware/mot_dw9784.prog
 
 # Camera - sensor
 vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so
