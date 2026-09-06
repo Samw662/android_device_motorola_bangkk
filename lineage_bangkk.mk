@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from bangkk device
 $(call inherit-product, device/motorola/bangkk/device.mk)
 
-# Inherit some common Infinity stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := infinity_bangkk
+PRODUCT_NAME := lineage_bangkk
 PRODUCT_DEVICE := bangkk
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -23,15 +23,6 @@ PRODUCT_MODEL := moto g84 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="bangkk_g-user 15 V1TCS35H.88-16-4 d201a-da14f release-keys MV-301" \
+    BuildDesc="bangkk_g-user 15 V1TCS35H.88-16-4 d201a-da14f release-keys" \
     BuildFingerprint=motorola/bangkk_g/bangkk:15/V1TCS35H.88-16-4/d201a-da14f:user/release-keys \
     DeviceProduct=bangkk_g
-
-# Infinity-X stuff
-INFINITY_MAINTAINER := Aryan S
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_BLUR := true
-TARGET_HAS_UDFPS := true
-WITH_GAPPS := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_FACE_UNLOCK_SUPPORTED := true

@@ -4,4 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_bangkk.mk
+    $(LOCAL_DIR)/lineage_bangkk.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_bangkk-user \
+    lineage_bangkk-userdebug \
+    lineage_bangkk-eng
