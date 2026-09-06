@@ -45,12 +45,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
 
-# Partition images for OTA/sideload
-PRODUCT_BUILD_SYSTEM_IMAGE := true
-PRODUCT_BUILD_VENDOR_IMAGE := true
-PRODUCT_BUILD_PRODUCT_IMAGE := true
-PRODUCT_BUILD_SYSTEM_EXT_IMAGE := true
-
 # Inherit from motorola sm6375-common
 $(call inherit-product, device/motorola/sm6375-common/common.mk)
 
