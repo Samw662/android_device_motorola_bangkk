@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- crDroid: device maintainer shown for unofficial builds -->
+    <string name="build_maintainer_summary" translatable="false">Samw662</string>
+</resources>
